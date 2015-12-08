@@ -11,15 +11,15 @@
     <% end %>
   </div>
 </div>
-<%= form_for(Message.new, html: { class: "form-horizonal" }) do |f|  %>
+<%= form_for(Message.new, html: { class: "form-horizontal" }) do |f|  %>
   <div class="form-group">
-    <label class="col-sm-2 control-lavel">名前:</label>
+    <label for="message_name" class="col-sm-2 control-label">名前:</label>
     <div class="col-sm-10">
       <%= f.text_field :name %>
     </div>
   </div>
   <div class="form-group">
-    <label class="col-sm-2 control-lavel">内容:</label>
+    <label for="message_body" class="col-sm-2 control-label">内容:</label>
     <div class="col-sm-10">
       <%= f.text_area :body, class: "col-sm-10", placeholder: "○○字以内で入力してください。" %>
     </div>
